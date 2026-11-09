@@ -6,7 +6,7 @@
 * **Diferencia con SSH:** La diferencia entre RDP y SSH es que funcionan en **puertos distintos**, RDP es **gráfico** y el SSH es más por **comandos**, y que el **consumo de red es mayor en RDP**.
 
 ---
-
+ 
 ##  Comandos utilizados en la práctica
 
 ###  En la máquina Ubuntu (`ubuntu-gui`)
