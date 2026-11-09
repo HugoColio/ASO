@@ -41,7 +41,7 @@
 * **Ver el registro de accesos rechazados en SSH desde el cliente:**
   ```bash
   # Comando de prueba ejecutado desde el equipo cliente:
-  ssh invitado@192.168.154.30
+  ssh invitado@192.168.154.140
 
   # Comando ejecutado en el servidor para ver el rechazo:
   sudo journalctl -u ssh | grep "not allowed"
@@ -132,7 +132,7 @@
   sudo ufw allow 10000/tcp        # Apertura temporal para la prueba inicial
   sudo ufw delete allow 10000/tcp # Cierre definitivo del puerto al exterior
   ```
-  *Explicación:* Permite revisar el estado del firewall local, abrir el puerto de forma momentánea para la primera prueba desde el navegador cliente (`https://192.168.154.30:10000`) y finalmente eliminar la regla para blindar el panel.
+  *Explicación:* Permite revisar el estado del firewall local, abrir el puerto de forma momentánea para la primera prueba desde el navegador cliente (`https://192.168.154.140:10000`) y finalmente eliminar la regla para blindar el panel.
 
 * **Asegurar las reglas esenciales en UFW antes de activarlo:**
   ```bash
@@ -146,6 +146,6 @@
 * **Comando ejecutado EN EL CLIENTE para abrir el Túnel SSH:**
   ```bash
   # Ejecutar en PowerShell o Terminal de tu máquina cliente:
-  ssh -L 10000:localhost:10000 soporte@192.168.154.30
+  ssh -L 10000:localhost:10000 soporte@192.168.154.140
   ```
-  *Explicación:* Crea el túnel mapeando el puerto 10000 de tu máquina local hacia el puerto 10000 interno del servidor Ubuntu (`192.168.154.30`) usando el usuario autorizado `soporte`. Esto permite abrir el navegador web del cliente e ingresar de forma segura usando la dirección de bucle local: `https://localhost:10000`.
+  *Explicación:* Crea el túnel mapeando el puerto 10000 de tu máquina local hacia el puerto 10000 interno del servidor Ubuntu (`192.168.154.140`) usando el usuario autorizado `soporte`. Esto permite abrir el navegador web del cliente e ingresar de forma segura usando la dirección de bucle local: `https://localhost:10000`.
