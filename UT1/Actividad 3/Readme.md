@@ -1,4 +1,4 @@
-## 📝 Resumen de teoría 
+##  Resumen de teoría 
 
 * **Mínimo privilegio:** Es un principio de seguridad informática que consiste en dar a cada usuario únicamente los permisos y accesos estrictamente necesarios para realizar su trabajo, evitando que cuentas comunes tengan privilegios de administración o accesos a servicios que no necesitan.
 * **AllowGroups en Linux y en Windows:** Es una directiva de configuración que sirve para restringir el acceso por SSH. Al usarla, solo los usuarios que pertenezcan a los grupos que pongas en esa lista podrán conectarse, rechazando automáticamente a todos los demás usuarios del sistema.
@@ -9,7 +9,7 @@
 
 ---
 
-## 💻 Comandos utilizados en la práctica
+##  Comandos utilizados en la práctica
 
 ### 1. Cuentas en Linux y restricción de SSH
 
